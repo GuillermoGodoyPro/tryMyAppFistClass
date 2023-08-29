@@ -16,9 +16,10 @@ class MainActivity : AppCompatActivity() {
         val miNombre : EditText =  findViewById(R.id.editTextTextNombre)
         val boton : Button = findViewById(R.id.buttonAgregar)
 
-        val texto : String = miNombre.text.toString()
 
         boton.setOnClickListener {
+            val texto : String = miNombre.text.toString()
+
             Toast.makeText(this, texto, Toast.LENGTH_SHORT).show()
         }
     }
